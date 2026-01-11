@@ -1226,7 +1226,6 @@ function printPropertyHook(path, options, print, hook) {
 
   if (hook.body) {
     if (hook.body.kind === "block") {
-      console.log(hook.body);
       parts.push(" ", "{", indent([line, path.call(print, "body")]), line, "}");
     } else {
       parts.push(
